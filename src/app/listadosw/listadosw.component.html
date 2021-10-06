@@ -1,0 +1,28 @@
+<div class="container">
+
+  <h1 class="mt-5">Lista de personajes de Star Wars</h1>
+  <hr>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>id</th>
+      <th>Nombre</th>
+      <th>Año de nacimiento</th>
+      <th>Genero</th>
+      <th>Color de ojos</th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pws of p3">
+      <td>{{pws.id}}</td>
+      <td>{{pws.name}}</td>
+      <td>{{pws.birth_year}}</td>
+      <td>{{pws.gender}}</td>
+      <td>{{pws.eye_color}}</td>
+      <td>{{pws.mass}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>

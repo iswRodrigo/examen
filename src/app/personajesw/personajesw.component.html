@@ -1,0 +1,33 @@
+<div class="container m-12">
+
+  <h2>Ingresa nombre del personaje</h2>
+  <input [(ngModel)]="nametxt" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">
+  <button (click)="buscar()" type="button" class="btn btn-primary">Buscar</button>
+</div>
+
+<div class="container">
+
+  <table class="table">
+    <thead>
+      <tr>
+      <th>id</th>
+      <th>Nombre</th>
+      <th>Año de nacimiento</th>
+      <th>Genero</th>
+      <th>Color de ojos</th>
+      <th>Peso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pws of peopleSw">
+      <td>{{pws.id}}</td>
+      <td>{{pws.name}}</td>
+      <td>{{pws.birth_year}}</td>
+      <td>{{pws.gender}}</td>
+      <td>{{pws.eye_color}}</td>
+      <td>{{pws.mass}}</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
